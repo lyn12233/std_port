@@ -57,3 +57,7 @@ struct sockaddr_storage {
 };
 
 // internet domain part in <netinet/in.h>
+
+///@defgroup socket_query
+
+int getpeername(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
